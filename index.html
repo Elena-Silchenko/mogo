@@ -19,355 +19,396 @@
 </head>
 <body>
   <!-- Main section -->
-  <div>
+  <div class="header pb-3">
     <!-- Header -->
-    <div>
-      <div class="container d-flex">
-        <div>MoGo</div>
-        <div class="flex-grow-1"></div>
-        <div>Menu</div>
-      </div>
-    </div>
+    <div class="container-sm">
+      <!-- Header section -->
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <!-- Header container -->
+        <div class="flex-grow-1">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">MoGo</a>
+        </div>
 
-    <!-- Banner container -->
-    <div>
-      <div class="container">
-        <div class="d-flex flex-column">
-          <div class="m-auto">Creative Template</div>
-          <div class="m-auto">Welcome to MoGo</div>
-          <button class="m-auto">LEARN MORE</button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="flex-grow: 0;">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link link-underlined active" href="#about">About<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link link-underlined" href="#service">Service</a>
+            <a class="nav-item nav-link link-underlined" href="#work">Work</a>
+            <a class="nav-item nav-link link-underlined" href="#blog">Blog</a>
+            <a class="nav-item nav-link link-underlined" href="#contact">Contact</a>
+            <a class="nav-item nav-link" href="#"><i class="fa fa-shopping-cart"></i></a>
+            <a class="nav-item nav-link" href="#"><i class="fa fa-search"></i></a>
+          </div>
         </div>
-        <div class="d-flex">
-          <div>01 INTRO</div>
-          <div>02 WORK</div>
-          <div>03 ABOUT</div>
-          <div>04 CONTACTS</div>
-        </div>
-      </div>
-    </div>
+      </nav>
 
-    <!-- About us container -->
-    <div>
-      <div class="container">
-        <div class="d-flex flex-column">
-          <div class="m-auto">What we do</div>
-          <div class="m-auto">STORY ABOUT US</div>
-          <p class="m-auto text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          </p>
-        </div>
-        <div class="d-flex">
-          <div>image</div>
-          <div>image</div>
-          <div>image</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Facts container -->
-    <div>
-      <div class="container">
-        <div class="d-flex">
-          <div class="numbers" data-target="42">42</div>
-          <div class="numbers" data-target="123">123</div>
-          <div class="numbers" data-target="15">15</div>
-          <div class="numbers" data-target="99">99</div>
-          <div class="numbers" data-target="24">24</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Services container -->
-    <div>
-      <div class="container">
-        <div class="d-flex flex-column">
-          <div class="m-auto">We work with</div>
-          <div class="m-auto">AMAZING SERVICES</div>
-        </div>
-        <div class="d-flex">
-          <div>PHOTOGRAPHY</div>
-          <div>WEB DESIGN</div>
-          <div>CREATIVITY</div>
-        </div>
-        <div class="d-flex">
-          <div>SEO</div>
-          <div>CSS/HTML</div>
-          <div>DIGITAL</div>
+      <!-- Banner container -->
+      <div>
+        <div class="container d-flex flex-column">
+          <div class="d-flex flex-column" style="padding: 7em 0;">
+            <div class="m-auto" style="font-size: 2em; font-style: italic;">Creative Template</div>
+            <div class="m-auto" style="
+              font-weight: 700;
+              font-size: 4em;
+              text-transform: uppercase;
+              max-width: 5em;
+              line-height: 0.9em;">
+              Welcome to MoGo
+            </div>
+            <div class="m-auto">
+              <hr style="width: 3em; height: 0.05em; background: #fff; border-radius: .5em;" />
+            </div>
+            <div class="m-auto">
+              <button class="btn btn-outline-light">LEARN MORE</button>
+            </div>
+          </div>
+          <div class="main-progress d-flex m-auto">
+            <div class="progress-block">
+              <div class="progress-bar d-flex" style="--progress: 30%"></div>
+              <div class="text-uppercase">01 Intro</div>
+            </div>
+            <div class="progress-block">
+              <div class="progress-bar d-flex" style="--progress: 0%"></div>
+              <div class="text-uppercase">02 Work</div>
+            </div>
+            <div class="progress-block">
+              <div class="progress-bar d-flex" style="--progress: 0%"></div>
+              <div class="text-uppercase">03 About</div>
+            </div>
+            <div class="progress-block">
+              <div class="progress-bar d-flex" style="--progress: 0%"></div>
+              <div class="text-uppercase">04 Contacts</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Feature container -->
-    <div>
-      <div class="container">
-        <div class="d-flex flex-column">
-          <div class="m-auto">For all devices</div>
-          <div class="m-auto">UNIQUE DESIGN</div>
-        </div>
+  <!-- About us container -->
+  <div>
+    <div class="container">
+      <div class="d-flex flex-column">
+        <div class="m-auto">What we do</div>
+        <div class="m-auto">STORY ABOUT US</div>
+        <p class="m-auto text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        </p>
+      </div>
+      <div class="d-flex">
+        <div>image</div>
+        <div>image</div>
+        <div>image</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Facts container -->
+  <div>
+    <div class="container">
+      <div class="d-flex">
+        <div class="numbers" data-target="42">42</div>
+        <div class="numbers" data-target="123">123</div>
+        <div class="numbers" data-target="15">15</div>
+        <div class="numbers" data-target="99">99</div>
+        <div class="numbers" data-target="24">24</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services container -->
+  <div>
+    <div class="container">
+      <div class="d-flex flex-column">
+        <div class="m-auto">We work with</div>
+        <div class="m-auto">AMAZING SERVICES</div>
+      </div>
+      <div class="d-flex">
+        <div>PHOTOGRAPHY</div>
+        <div>WEB DESIGN</div>
+        <div>CREATIVITY</div>
+      </div>
+      <div class="d-flex">
+        <div>SEO</div>
+        <div>CSS/HTML</div>
+        <div>DIGITAL</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feature container -->
+  <div>
+    <div class="container">
+      <div class="d-flex flex-column">
+        <div class="m-auto">For all devices</div>
+        <div class="m-auto">UNIQUE DESIGN</div>
+      </div>
+      <div>Image</div>
+    </div>
+  </div>
+
+  <!-- Services 2 -->
+  <div>
+    <div class="container">
+      <div class="d-flex flex-column">
+        <div class="m-auto">Service</div>
+        <div class="m-auto">WHAT WE DO</div>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <div class="d-flex">
         <div>Image</div>
+        <div>
+          <div>PHOTOGRAPHY</div>
+          <div>CREATIVITY</div>
+          <div>WEB DESIGN</div>
+        </div>
       </div>
     </div>
 
-    <!-- Services 2 -->
-    <div>
-      <div class="container">
-        <div class="d-flex flex-column">
-          <div class="m-auto">Service</div>
-          <div class="m-auto">WHAT WE DO</div>
-          <p class="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
+
+
+  </div>
+
+  <!-- Quote container -->
+  <div>
+    <div class="container d-flex">
+      <div>Image</div>
+      <div>
+        <div>
+          “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+          quis nostrud exercitation.”
+        </div>
+        <div>Jon Doe</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Team container -->
+  <div>
+    <div class="container">
+      <div class="d-flex flex-column">
+        <div class="m-auto">Who we are</div>
+        <div class="m-auto">MEET OUR TEAM</div>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        </p>
+      </div>
+      <div class="d-flex">
+        <div>
+          <div>Image</div>
+          <div>MATTHEW DIX</div>
+          <div>Graphic Design</div>
+        </div>
+        <div>
+          <div>Image</div>
+          <div>CHRISTOPHER CAMPBELL</div>
+          <div>Branding/UX design</div>
+        </div>
+        <div>
+          <div>Image</div>
+          <div>MICHAEL FERTIG </div>
+          <div>Developer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Logos container -->
+  <div>
+    <div class="container d-flex">
+      <div>logo 1</div>
+      <div>logo 2</div>
+      <div>logo 3</div>
+      <div>logo 4</div>
+      <div>logo 5</div>
+      <div>logo 6</div>
+    </div>
+  </div>
+
+  <!-- Work container -->
+  <div>
+    <div class="container">
+      <div class="d-flex flex-column">
+        <div class="m-auto">What we do</div>
+        <div class="m-auto">SOME OF OUR WORK</div>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        </p>
+      </div>
+      <div>Gallery</div>
+    </div>
+  </div>
+
+  <!-- Testomonial container -->
+  <div>
+    <div class="container d-flex">
+      <div>Image</div>
+      <div>
+        <div>
+          “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+          quis nostrud exercitation.”
+        </div>
+        <div>Joshua Earle</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- What people say container -->
+  <div>
+    <div class="container">
+      <div class="d-flex flex-column">
+        <div class="m-auto">Happy clients</div>
+        <div class="m-auto">WHAT PEOPLE SAY</div>
+      </div>
+      <div class="d-flex">
+        <div class="d-flex">
+          <div>Image</div>
+          <div>
+            <div>Matthew Dix</div>
+            <div>Graphic Design</div>
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+            </div>
+          </div>
         </div>
         <div class="d-flex">
           <div>Image</div>
           <div>
-            <div>PHOTOGRAPHY</div>
-            <div>CREATIVITY</div>
-            <div>WEB DESIGN</div>
-          </div>
-        </div>
-      </div>
-
-
-
-    </div>
-
-    <!-- Quote container -->
-    <div>
-      <div class="container d-flex">
-        <div>Image</div>
-        <div>
-          <div>
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation.”
-          </div>
-          <div>Jon Doe</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Team container -->
-    <div>
-      <div class="container">
-        <div class="d-flex flex-column">
-          <div class="m-auto">Who we are</div>
-          <div class="m-auto">MEET OUR TEAM</div>
-          <p class="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          </p>
-        </div>
-        <div class="d-flex">
-          <div>
-            <div>Image</div>
-            <div>MATTHEW DIX</div>
+            <div>Nick Karvounis</div>
             <div>Graphic Design</div>
-          </div>
-          <div>
-            <div>Image</div>
-            <div>CHRISTOPHER CAMPBELL</div>
-            <div>Branding/UX design</div>
-          </div>
-          <div>
-            <div>Image</div>
-            <div>MICHAEL FERTIG </div>
-            <div>Developer</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Logos container -->
-    <div>
-      <div class="container d-flex">
-        <div>logo 1</div>
-        <div>logo 2</div>
-        <div>logo 3</div>
-        <div>logo 4</div>
-        <div>logo 5</div>
-        <div>logo 6</div>
-      </div>
-    </div>
-
-    <!-- Work container -->
-    <div>
-      <div class="container">
-        <div class="d-flex flex-column">
-          <div class="m-auto">What we do</div>
-          <div class="m-auto">SOME OF OUR WORK</div>
-          <p class="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          </p>
-        </div>
-        <div>Gallery</div>
-      </div>
-    </div>
-
-    <!-- Testomonial container -->
-    <div>
-      <div class="container d-flex">
-        <div>Image</div>
-        <div>
-          <div>
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation.”
-          </div>
-          <div>Joshua Earle</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- What people say container -->
-    <div>
-      <div class="container">
-        <div class="d-flex flex-column">
-          <div class="m-auto">Happy clients</div>
-          <div class="m-auto">WHAT PEOPLE SAY</div>
-        </div>
-        <div class="d-flex">
-          <div class="d-flex">
-            <div>Image</div>
             <div>
-              <div>Matthew Dix</div>
-              <div>Graphic Design</div>
-              <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
-              </div>
+              Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+              labore et dolore magna aliqua. Ut enim ad minim veniam
             </div>
           </div>
-          <div class="d-flex">
-            <div>Image</div>
+        </div>
+      </div>
+      <div class="d-flex">
+        <div class="d-flex">
+          <div>Image</div>
+          <div>
+            <div>Jaelynn Castillo </div>
+            <div>Graphic Design</div>
             <div>
-              <div>Nick Karvounis</div>
-              <div>Graphic Design</div>
-              <div>
-                Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                labore et dolore magna aliqua. Ut enim ad minim veniam
-              </div>
+              Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
             </div>
           </div>
         </div>
         <div class="d-flex">
-          <div class="d-flex">
-            <div>Image</div>
+          <div>Image</div>
+          <div>
+            <div>Mike Petrucci</div>
+            <div>Graphic Design</div>
             <div>
-              <div>Jaelynn Castillo </div>
-              <div>Graphic Design</div>
-              <div>
-                Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-              </div>
-            </div>
-          </div>
-          <div class="d-flex">
-            <div>Image</div>
-            <div>
-              <div>Mike Petrucci</div>
-              <div>Graphic Design</div>
-              <div>
-                Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad minim.
-              </div>
+              Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+              ut labore et dolore magna aliqua. Ut enim ad minim.
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Blog container -->
-    <div>
-      <div class="container">
-        <div class="container d-flex flex-column">
-          <div class="m-auto">Our stories</div>
-          <div class="m-auto">LATEST BLOG</div>
-        </div>
-        <div class="d-flex">
-          <div>
-            <div>Image</div>
-            <div>Lorem ipsum dolor sit amet</div>
-            <div>
-              Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-              dolore magna aliqua.
-            </div>
-            <div class="d-flex">
-              <div>
-                <div>Icon</div>
-                <div>Number</div>
-              </div>
-              <div>
-                <div>Icon</div>
-                <div>Number</div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>Image</div>
-            <div>sed do eiusmod tempor</div>
-            <div>
-              Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </div>
-            <div class="d-flex">
-              <div>
-                <div>Icon</div>
-                <div>Number</div>
-              </div>
-              <div>
-                <div>Icon</div>
-                <div>Number</div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>Image</div>
-            <div>incididunt ut labore et dolore</div>
-            <div>Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-            <div class="d-flex">
-              <div>
-                <div>Icon</div>
-                <div>Number</div>
-              </div>
-              <div>
-                <div>Icon</div>
-                <div>Number</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Map container -->
-    <div>
-      <div class="container d-flex flex-column">
-        <div class="m-auto">Icon</div>
-        <div class="m-auto">
-          <a href class="text-uppercase">Open map</a>
-        </div>
-        <div class="m-auto">line</div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="d-flex">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div>&copy;</div>
-      </div>
-    </footer>
   </div>
+
+  <!-- Blog container -->
+  <div>
+    <div class="container">
+      <div class="container d-flex flex-column">
+        <div class="m-auto">Our stories</div>
+        <div class="m-auto">LATEST BLOG</div>
+      </div>
+      <div class="d-flex">
+        <div>
+          <div>Image</div>
+          <div>Lorem ipsum dolor sit amet</div>
+          <div>
+            Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+            dolore magna aliqua.
+          </div>
+          <div class="d-flex">
+            <div>
+              <div>Icon</div>
+              <div>Number</div>
+            </div>
+            <div>
+              <div>Icon</div>
+              <div>Number</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>Image</div>
+          <div>sed do eiusmod tempor</div>
+          <div>
+            Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <div class="d-flex">
+            <div>
+              <div>Icon</div>
+              <div>Number</div>
+            </div>
+            <div>
+              <div>Icon</div>
+              <div>Number</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>Image</div>
+          <div>incididunt ut labore et dolore</div>
+          <div>Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+          <div class="d-flex">
+            <div>
+              <div>Icon</div>
+              <div>Number</div>
+            </div>
+            <div>
+              <div>Icon</div>
+              <div>Number</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Map container -->
+  <div>
+    <div class="container d-flex flex-column">
+      <div class="m-auto">Icon</div>
+      <div class="m-auto">
+        <a href class="text-uppercase">Open map</a>
+      </div>
+      <div class="m-auto">line</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="d-flex">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>&copy;</div>
+    </div>
+  </footer>
 </body>
 </html>

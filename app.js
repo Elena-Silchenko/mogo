@@ -1,4 +1,4 @@
-document.querySelectorAll("-.numbers").forEach(function (item) {
+document.querySelectorAll(".numbers-").forEach(function (item) {
   let limit = +item.dataset.target
   let number = 0
   let increment = Math.floor(limit / 10)
