@@ -29,11 +29,27 @@
 }
 
 .navbar-nav a:hover {
-  color: #fce18a !important;
+  color: #fce38a !important;
 }
 
 .navbar-nav a.link-underlined:hover {
   border-bottom: 0.1em solid #fce18a;
+}
+
+p {
+  color: #999999;
+  font-size: 0.8em;
+}
+
+h2 {
+  font-weight: 700; 
+  font-size: 1.5em;
+}
+
+h3 {
+  font-style: italic; 
+  font-size: 1.3em; 
+  font-weight: 400;
 }
 
 .main-progress {
@@ -49,15 +65,91 @@
 }
 
 .progress-bar {
-  position: relative; height: 0.1em;
+  position: relative; 
+  height: 0.1em;
 }
 
 .progress-bar::before {
   content: "";
-  position: absolute; left: 0; top: 0; width: 100%; height: 100%; margin: 0; background: #fff;
+  position: absolute; 
+  left: 0; 
+  top: 0; 
+  width: 100%; 
+  height: 100%; 
+  margin: 0; 
+  background: #fff;
 }
 
 .progress-bar::after {
   content: "";
-  position: absolute; left: 0; top: 0; width: var(--progress); height: 100%; margin: 0; background: red; z-index: 1;
+  position: absolute; 
+  left: 0; 
+  top: 0; 
+  width: var(--progress); 
+  height: 100%; 
+  margin: 0; 
+  background: #f38181; 
+  z-index: 1;
+}
+
+.about-us {
+  position: relative; 
+  background: #95e1d3; 
+  max-width: 45em; 
+  height: 15em;
+  color: #fff;
+  flex-grow: 1;
+}
+
+.about-us > div {
+  position:absolute; 
+  left: 0; 
+  right: 0; 
+  top: 0; 
+  bottom: 0; 
+  transition: top .25s, bottom .25s, left .5s, right .5s, box-shadow .5s;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-us > div:hover {
+  left: -1em;
+  right: 1em;
+  top: -1em;
+  bottom: 1em;
+  box-shadow: 1em 1em .5em .2em #bebebe80;
+}
+
+.about-us > div:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(244, 140, 130, 89%), rgba(252, 225, 138, 89%));
+  z-index: 0;
+}
+
+.facts-container {
+  color: #fff;
+}
+
+.numbers {
+  font-weight: 700;
+  font-size: 4em;
+}
+
+.facts-container-description {
+  font-size: 0.6em;
+}
+
+.facts-box {
+  padding: 0 3em;
+}
+
+.services-box i {
+  color: #94e0d2;
+  font-size: 1.5em;
 }
