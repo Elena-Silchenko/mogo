@@ -3,6 +3,30 @@
   padding: 0;
 }
 
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container, .container-md, .container-sm {
+    max-width: 680px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container, .container-lg, .container-md, .container-sm {
+    max-width: 900px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1000px;
+  }
+}
+
 .header {
   position: relative;
   background: url(../images/background.png) center center / cover no-repeat; 
