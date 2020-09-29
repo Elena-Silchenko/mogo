@@ -214,6 +214,7 @@ h3 {
   margin: 1.25em;
   padding-right: 1em;
   overflow-y: auto;
+  max-height: 11.4em;
 }
 
 .collapse p {
