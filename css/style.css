@@ -134,11 +134,18 @@ h3 {
 
 .facts-container {
   color: #fff;
+  border-right: .1pt solid #fff8;
+}
+
+.facts-container:first-child {
+  border-left: .1pt solid #fff8;
 }
 
 .numbers {
   font-weight: 700;
   font-size: 4em;
+  line-height: 1em;
+  margin-bottom: 0.3em;
 }
 
 .facts-container-description {
@@ -146,10 +153,48 @@ h3 {
 }
 
 .facts-box {
-  padding: 0 3em;
+  padding: 3em 3em;
+  width: 13em;
+}
+
+.services-box {
+  width: 20em;
+  padding: 1em 0;
+}
+
+.services-box:not(:last-child) {
+  margin-right: 2em;
 }
 
 .services-box i {
   color: #94e0d2;
   font-size: 1.5em;
 }
+
+.services-box-title { 
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.feature-container {
+  position: relative;
+  background: url(../images/feature-background.png) center center / cover no-repeat;
+  overflow-y: hidden
+}
+
+.feature-container .container {
+  position: relative;
+  z-index: 1;
+}
+
+.feature-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(255 255 255 / 84%);
+  z-index: 0;
+}
+
