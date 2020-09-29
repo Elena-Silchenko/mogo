@@ -179,7 +179,7 @@ h3 {
 .feature-container {
   position: relative;
   background: url(../images/feature-background.png) center center / cover no-repeat;
-  overflow-y: hidden
+  overflow-y: hidden;
 }
 
 .feature-container .container {
@@ -198,3 +198,24 @@ h3 {
   z-index: 0;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
+.accordion .card .fa-chevron-down {
+  transition: transform .3s;
+}
+
+.accordion .card.open .fa-chevron-down {
+  transform: rotate(180deg);
+}
+
+.collapse {
+  margin: 1.25em;
+  padding-right: 1em;
+  overflow-y: auto;
+}
+
+.collapse p {
+  padding: 0;
+}

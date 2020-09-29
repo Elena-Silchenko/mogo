@@ -16,3 +16,15 @@ document.querySelectorAll(".numbers").forEach(function (item) {
     }
   }, 100)
 })
+
+function accordionUpdateStatusClasses(e) {
+  let el = e.target
+  if (!el.classList.contains("show")) {
+    el.closest(".card").classList.add("open")
+  } else {
+    el.closest(".card").classList.remove("open")
+  }
+}
+
+$(".accordion").on("hide.bs.collapse", accordionUpdateStatusClasses)
+$(".accordion").on("show.bs.collapse", accordionUpdateStatusClasses)
