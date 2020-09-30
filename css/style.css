@@ -244,3 +244,65 @@ h3 {
 .collapse p {
   padding: 0;
 }
+
+.team-container {
+  position: relative; 
+  background: #95e1d3; 
+  width: 15em; 
+  height: 18em;
+  color: #fff;
+  flex-grow: 1;
+}
+
+.team-container > div {
+  position:absolute; 
+  left: 0; 
+  right: 0; 
+  top: 0; 
+  bottom: 0; 
+  transition: top .25s, bottom .25s, left .5s, right .5s, box-shadow .5s;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.team-container > div:hover {
+  left: -1em;
+  right: 1em;
+  top: -1em;
+  bottom: 1em;
+  box-shadow: 1em 1em .5em .2em #bebebe80;
+}
+
+.team-container > div:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(244, 140, 130, 89%), rgba(252, 225, 138, 89%));
+  z-index: 0;
+}
+
+.team-container-square {
+  width: 2em;
+  height: 2em;
+  display: flex;
+}
+
+.team-container-square:not(:last-child) {
+  border-right: .1pt solid #f38181;
+}
+
+.team-container-square a {
+  color: #f38181;
+}
+
+.team-container-square:hover {
+  background: #f38181;
+}
+
+.team-container-square:hover a {
+  color: #fff;
+}
