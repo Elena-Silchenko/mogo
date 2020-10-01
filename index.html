@@ -549,8 +549,8 @@
     <div class="mx-auto d-flex flex-column flex-xl-row">
       <div class="mx-auto d-flex flex-column flex-md-row" style="flex: 1 1 0px;">
         <div class="work-container-gallery d-flex flex-column" style="flex: 1 1 0px;">
-          <div style="min-width: 15em; max-width: 20em; height: 15em; min-height: 15em; max-height: 15em; overflow: hidden;">
-            <img src="./images/work-container-gallery-1.png" style="width: 100%; margin-top: -13em;" />
+          <div class="work-container-gallery-box">
+            <img src="./images/work-container-gallery-1.png" />
             <div>
               <div class="d-flex flex-column m-auto">
                 <i class="far fa-image mx-auto"></i>
@@ -634,15 +634,87 @@
 
   <!-- Testomonial container -->
   <div>
-    <div class="container d-flex">
-      <div>Image</div>
-      <div>
-        <div>
-          “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-          quis nostrud exercitation.”
+    <div class="container py-5">
+      <div id="carousel-testomonial" class="carousel slide d-flex align-items-center" data-ride="carousel">
+        <div style="margin-right: 3em;">
+          <a href="#carousel-testomonial" role="button" data-slide="prev" style="color: #cccccc;">
+            <i class="fas fa-chevron-left"></i>
+          </a>
         </div>
-        <div>Joshua Earle</div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex">
+              <div style="margin-right: 3em;">
+                <div class="image-round testomonial-image">
+                  <img src="./images/testomonial-container.png" />
+                </div>
+              </div>
+              <div style="font-style: italic; margin-right: 3em;">
+                <p style="font-size: 0.9em;">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                </p>
+                <div class="d-flex align-items-center">
+                  <div style="margin-right: 1em;">
+                    <hr style="width: 3em; height: 0.05em; background: #f58b82; border-radius: .5em;" />
+                  </div>
+                  <div style="font-weight: 600;">Joshua Earle</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex">
+              <div style="margin-right: 3em;">
+                <div class="image-round testomonial-image">
+                  <img src="./images/testomonial-container.png" />
+                </div>
+              </div>
+              <div style="font-style: italic; margin-right: 3em;">
+                <p style="font-size: 0.9em;">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                </p>
+                <div class="d-flex align-items-center">
+                  <div style="margin-right: 1em;">
+                    <hr style="width: 3em; height: 0.05em; background: #f58b82; border-radius: .5em;" />
+                  </div>
+                  <div style="font-weight: 600;">Joshua Earle</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex">
+              <div style="margin-right: 3em;">
+                <div class="image-round testomonial-image">
+                  <img src="./images/testomonial-container.png" />
+                </div>
+              </div>
+              <div style="font-style: italic; margin-right: 3em;">
+                <p style="font-size: 0.9em;">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                </p>
+                <div class="d-flex align-items-center">
+                  <div style="margin-right: 1em;">
+                    <hr style="width: 3em; height: 0.05em; background: #f58b82; border-radius: .5em;" />
+                  </div>
+                  <div style="font-weight: 600;">Joshua Earle</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a href="#carousel-quotes" role="button" data-slide="next" style="color: #cccccc;">
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
       </div>
     </div>
   </div>

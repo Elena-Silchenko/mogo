@@ -347,3 +347,33 @@ h3 {
   background: linear-gradient(to bottom, rgba(244, 140, 130, 89%), rgba(252, 225, 138, 89%));
 }
 
+.work-container-gallery-box {
+  min-width: 15em; 
+  max-width: 20em; 
+  height: 15em; 
+  min-height: 15em; 
+  max-height: 15em; 
+  overflow: hidden;
+}
+
+.work-container-gallery-box img {
+  width: 100%; 
+  margin-top: -13em;
+}
+
+.testomonial-image {
+  width: 8em;
+  height: 8em;
+}
+
+.testomonial-image img {
+  margin-left: 0em;
+  max-width: 100%;
+}
+.image-round {
+  overflow: hidden;
+  border-radius: 50%;
+  background: #bebebe;
+  display: flex;
+  z-index: 1;
+}
