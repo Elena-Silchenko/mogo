@@ -367,13 +367,44 @@ h3 {
 }
 
 .testomonial-image img {
-  margin-left: 0em;
   max-width: 100%;
 }
 .image-round {
   overflow: hidden;
   border-radius: 50%;
-  background: #bebebe;
   display: flex;
+}
+
+.what-people-say-container {
+  position: relative;
+  background: url(../images/what-people-say-background.png) center center / cover no-repeat;
+  overflow-y: hidden;
+}
+
+.what-people-say-container .container {
+  position: relative;
   z-index: 1;
+}
+
+.what-people-say-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(255 255 255 / 84%);
+  z-index: 0;
+}
+
+.what-people-say-image {
+  width: 9em;
+  height: 4.5em;
+  margin-right: 2em;
+}
+
+.what-people-say-image img {
+  max-width: 100%;
+  width: 17em;
+  height: 6em;
 }
