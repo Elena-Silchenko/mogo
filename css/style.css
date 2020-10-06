@@ -408,3 +408,25 @@ h3 {
   width: 17em;
   height: 6em;
 }
+
+.map-container {
+  position: relative;
+  background: url(../images/map-container.png) center center / cover no-repeat;
+  overflow-y: hidden;
+}
+
+.map-container .container {
+  position: relative;
+  z-index: 1;
+}
+
+.map-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(255 255 255 / 84%);
+  z-index: 0;
+}
