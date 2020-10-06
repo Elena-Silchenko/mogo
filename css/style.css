@@ -430,3 +430,35 @@ h3 {
   background: rgb(255 255 255 / 84%);
   z-index: 0;
 }
+
+.search {
+  border: 1px solid transparent;
+}
+
+.search:focus {
+  border: 1px solid #b59f5b;
+}
+
+.photo-gallery {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.photo-gallery > div {
+  width: 3.8em;
+  height: 3.8em;
+  margin: 0 .5em .5em 0;
+}
+
+.square-images .square-image {
+  overflow: hidden;
+  position: relative;
+}
+
+.square-images .square-image img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
