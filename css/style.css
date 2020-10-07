@@ -431,24 +431,25 @@ h3 {
   z-index: 0;
 }
 
-.search {
+.email {
   border: 1px solid transparent;
 }
 
-.search:focus {
+.email:focus {
   border: 1px solid #b59f5b;
 }
 
 .photo-gallery {
   display: flex; 
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-bottom: 1em;
+  max-width: 25em;
 }
 
 .photo-gallery > div {
-  width: 3.8em;
-  height: 3.8em;
-  margin: 0 .5em .5em 0;
+  width: 4.5em;
+  height: 4.5em;
+  margin: 0 0.1em 0.1em 0;
 }
 
 .square-images .square-image {
@@ -461,4 +462,18 @@ h3 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.photo-gallery-more {
+  font-size: 0.8em; 
+  font-weight: 400; 
+  font-style: italic;
+}
+
+.photo-gallery-more a {
+  color: #000;
+}
+
+.photo-gallery-more a:hover {
+  text-decoration: none;
 }
