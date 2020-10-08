@@ -7,11 +7,27 @@
   .container, .container-sm {
     max-width: 500px;
   }
+
+  .border-bottom-none, .border-bottom-sm-none {
+    border-bottom-style: none !important;
+  }
+
+  .border-bottom-solid, .border-bottom-sm-solid {
+    border-bottom-style: solid !important;
+  }
 }
 
 @media (min-width: 768px) {
   .container, .container-md, .container-sm {
     max-width: 680px;
+  }
+
+  .border-bottom-none, .border-bottom-sm-none, .border-bottom-md-none {
+    border-bottom-style: none !important;
+  }
+
+  .border-bottom-solid, .border-bottom-sm-solid, .border-bottom-md-solid {
+    border-bottom-style: solid !important;
   }
 }
 
@@ -19,11 +35,27 @@
   .container, .container-lg, .container-md, .container-sm {
     max-width: 900px;
   }
+
+  .border-bottom-none, .border-bottom-sm-none, .border-bottom-md-none, .border-bottom-lg-none {
+    border-bottom-style: none !important;
+  }
+
+  .border-bottom-solid, .border-bottom-sm-solid, .border-bottom-md-solid, .border-bottom-lg-solid {
+    border-bottom-style: solid !important;
+  }
 }
 
 @media (min-width: 1200px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1000px;
+  }
+
+  .border-bottom-none, .border-bottom-sm-none, .border-bottom-md-none, .border-bottom-lg-none, .border-bottom-xl-none {
+    border-bottom-style: none !important;
+  }
+
+  .border-bottom-solid, .border-bottom-sm-solid, .border-bottom-md-solid, .border-bottom-lg-solid, .border-bottom-xl-solid {
+    border-bottom-style: solid !important;
   }
 }
 
@@ -77,11 +109,11 @@ h3 {
 }
 
 .main-progress {
-
+  width: 100%;
 }
 
 .progress-block {
-  width: 12em;
+  flex: 1 1 0px;
 }
 
 .progress-block:not(:last-child) {
@@ -119,10 +151,8 @@ h3 {
 .about-us {
   position: relative; 
   background: #95e1d3; 
-  max-width: 45em; 
   height: 15em;
   color: #fff;
-  flex-grow: 1;
 }
 
 .about-us > div {
@@ -182,7 +212,7 @@ h3 {
 }
 
 .services-box {
-  width: 20em;
+  max-width: 20em;
   padding: 1em 0;
 }
 
@@ -315,7 +345,6 @@ h3 {
   flex: 1;
   height: 16em;
   overflow: hidden;
-  max-width: 100%;
 }
 
 .work-container-gallery > div {
@@ -398,10 +427,12 @@ h3 {
 }
 
 .what-people-say-image {
-  width: 9em;
+  width: 4.5em;
   height: 4.5em;
   margin-right: 2em;
-}
+  min-width: 4.5em;
+  max-width: 4.5em;
+  }
 
 .what-people-say-image img {
   max-width: 100%;
@@ -476,4 +507,8 @@ h3 {
 
 .photo-gallery-more a:hover {
   text-decoration: none;
+}
+
+.latest-blog > div {
+  width: 23em;
 }

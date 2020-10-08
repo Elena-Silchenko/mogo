@@ -61,7 +61,7 @@
               <button class="btn btn-outline-light">LEARN MORE</button>
             </div>
           </div>
-          <div class="main-progress d-flex mx-auto">
+          <div class="main-progress d-none d-md-flex mx-auto">
             <div class="progress-block">
               <div class="progress-bar d-flex" style="--progress: 30%"></div>
               <div class="text-uppercase">01 Intro</div>
@@ -100,7 +100,7 @@
         </p>
       </div>
       <div class="d-flex flex-column flex-md-row px-4 px-md-0">
-        <div class="about-us mr-0 mb-4 mb-md-0 mr-md-4">
+        <div class="about-us flex-md-fill mr-0 mb-4 mb-md-0 mr-md-4">
           <div class="d-flex flex-column" style="background-image: url(./images/about-us-1.png);">
             <div class="m-auto text-center" style="z-index: 1;">
               <i class="fas fa-user-friends"></i>
@@ -109,11 +109,11 @@
           </div>
         </div>
 
-        <div class="about-us mr-0 mb-4 mb-md-0 mr-md-4">
+        <div class="about-us flex-md-fill mr-0 mb-4 mb-md-0 mr-md-4">
           <div class="d-flex flex-column" style="background-image: url(./images/about-us-2.png);"></div>
         </div>
 
-        <div class="about-us">
+        <div class="about-us flex-md-fill">
           <div class="d-flex flex-column" style="background-image: url(./images/about-us-3.png);"></div>
         </div>
       </div>
@@ -123,7 +123,7 @@
   <!-- Facts container -->
   <div id="facts" style="background: #95e1d3;">
     <div class="d-flex">
-      <div class="d-flex mx-auto">
+      <div class="d-none d-lg-flex mx-auto">
         <div class="facts-container d-flex">
           <div class="facts-box d-flex flex-column">
             <div class="numbers mx-auto" data-target="42">42</div>
@@ -169,8 +169,8 @@
         </div>
       </div>
 
-      <div class="d-flex flex-column">
-        <div class="d-flex mx-auto" style="border-bottom: 0.01em solid #dadada; margin-bottom: 2em;">
+      <div class="d-flex flex-column flex-md-row flex-lg-column">
+        <div class="d-flex flex-column flex-md-column flex-lg-row mx-auto border-bottom-lg-solid border-bottom-md-none" style="border-bottom: 0.01em solid #dadada; margin-bottom: 2em;">
           <div class="services-box d-flex" style="margin-bottom: 2em;">
             <div class="mr-3">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" version="1.1" id="" x="0px" y="0px" width="1em" height="1em" viewBox="0 0 32 32" xml:space="preserve" style="font-size: 2.3em;fill: #94e0d2;">
@@ -202,7 +202,7 @@
           </div>
         </div>
 
-        <div class="d-flex mx-auto">
+        <div class="d-flex flex-column flex-md-column flex-lg-row mx-auto">
           <div class="services-box d-flex">
             <div class="mr-3">
               <i class="fas fa-book-open"></i>
@@ -236,7 +236,7 @@
   </div>
 
   <!-- Feature container -->
-  <div style="position: relative; margin-bottom: 5em;">
+  <div class="d-none d-sm-block" style="position: relative; margin-bottom: 5em;">
     <div class="feature-container">
       <div class="container" style="padding-top: 4em;">
         <div class="d-flex flex-column">
@@ -274,10 +274,10 @@
         </p>
       </div>
       <div class="row mx-0">
-        <div class="col-12 col-lg-6 pl-0">
+        <div class="col-12 col-lg-6 px-0 pr-lg-2 mb-2 mb-lg-0">
           <img src="./images/services-2.png" style="max-width: 100%;" />
         </div>
-        <div class="col-12 col-lg-6 pr-0 d-flex flex-column accordion" id="what-we-do" style="max-height: 23em;">
+        <div class="col-12 col-lg-6 px-0 pl-lg-2 d-flex flex-column accordion" id="what-we-do" style="max-height: 23em;">
           <div class="card open">
             <div class="card-header d-flex align-items-center pointer" id="what-we-do-photography" data-toggle="collapse" data-target="#what-we-do-photography-content" aria-expanded="true" aria-controls="collapseOne">
               <div style="color: #95e1d3;">
@@ -365,7 +365,7 @@
   <div style="background: #f8f8f8;">
     <div class="container py-5">
       <div id="carousel-quotes" class="carousel slide d-flex align-items-center" data-ride="carousel">
-        <div style="margin-right: 3em;">
+        <div class="mr-4">
           <a href="#carousel-quotes" role="button" data-slide="prev" style="color: #cccccc;">
             <i class="fas fa-chevron-left"></i>
           </a>
@@ -373,13 +373,15 @@
 
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="d-flex">
-              <div style="margin-right: 3em; border: 0.1em solid #95e1d3;">
-                <div style="color: #95e1d3; font-size: 3.5em; padding: 0.4em;">
-                  <i class="fas fa-comments"></i>
+            <div class="d-flex flex-column flex-md-row">
+              <div class="mb-3 mb-md-0 mr-md-4 d-flex">
+                <div class="mx-auto" style="border: 0.1em solid #95e1d3;">
+                  <div style="color: #95e1d3; font-size: 3.5em; padding: 0.4em;">
+                    <i class="fas fa-comments"></i>
+                  </div>
                 </div>
               </div>
-              <div style="font-style: italic; margin-right: 3em;">
+              <div style="font-style: italic;">
                 <p style="font-size: 0.9em;">
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -396,13 +398,15 @@
           </div>
 
           <div class="carousel-item">
-            <div class="d-flex">
-              <div style="margin-right: 3em; border: 0.1em solid #95e1d3;">
-                <div style="color: #95e1d3; font-size: 3.5em; padding: 0.4em;">
-                  <i class="fas fa-comments"></i>
+            <div class="d-flex flex-column flex-md-row">
+              <div class="mb-3 mb-md-0 mr-md-4 d-flex">
+                <div class="mx-auto" style="border: 0.1em solid #95e1d3;">
+                  <div style="color: #95e1d3; font-size: 3.5em; padding: 0.4em;">
+                    <i class="fas fa-comments"></i>
+                  </div>
                 </div>
               </div>
-              <div style="font-style: italic; margin-right: 3em;">
+              <div style="font-style: italic;">
                 <p style="font-size: 0.9em;">
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -419,13 +423,15 @@
           </div>
 
           <div class="carousel-item">
-            <div class="d-flex">
-              <div style="margin-right: 3em; border: 0.1em solid #95e1d3;">
-                <div style="color: #95e1d3; font-size: 3.5em; padding: 0.4em;">
-                  <i class="fas fa-comments"></i>
+            <div class="d-flex flex-column flex-md-row">
+              <div class="mb-3 mb-md-0 mr-md-4 d-flex">
+                <div class="mx-auto" style="border: 0.1em solid #95e1d3;">
+                  <div style="color: #95e1d3; font-size: 3.5em; padding: 0.4em;">
+                    <i class="fas fa-comments"></i>
+                  </div>
                 </div>
               </div>
-              <div style="font-style: italic; margin-right: 3em;">
+              <div style="font-style: italic;">
                 <p style="font-size: 0.9em;">
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -439,10 +445,9 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div>          
         </div>
-
-        <div>
+        <div class="ml-4">
           <a href="#carousel-quotes" role="button" data-slide="next" style="color: #cccccc;">
             <i class="fas fa-chevron-right"></i>
           </a>
@@ -636,7 +641,7 @@
   <div>
     <div class="container py-5">
       <div id="carousel-testomonial" class="carousel slide d-flex align-items-center" data-ride="carousel">
-        <div style="margin-right: 3em;">
+        <div class="mr-4">
           <a href="#carousel-testomonial" role="button" data-slide="prev" style="color: #cccccc;">
             <i class="fas fa-chevron-left"></i>
           </a>
@@ -645,12 +650,12 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="d-flex">
-              <div style="margin-right: 3em;">
+              <div class="mr-4">
                 <div class="image-round testomonial-image">
                   <img src="./images/testomonial-container.png" />
                 </div>
               </div>
-              <div style="font-style: italic; margin-right: 3em;">
+              <div style="font-style: italic;">
                 <p style="font-size: 0.9em;">
                   “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                   incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
@@ -667,15 +672,15 @@
 
           <div class="carousel-item">
             <div class="d-flex">
-              <div style="margin-right: 3em;">
+              <div class="mr-4">
                 <div class="image-round testomonial-image">
                   <img src="./images/testomonial-container.png" />
                 </div>
               </div>
-              <div style="font-style: italic; margin-right: 3em;">
+              <div style="font-style: italic;">
                 <p style="font-size: 0.9em;">
-                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
                 </p>
                 <div class="d-flex align-items-center">
                   <div style="margin-right: 1em;">
@@ -686,18 +691,18 @@
               </div>
             </div>
           </div>
-
+          
           <div class="carousel-item">
             <div class="d-flex">
-              <div style="margin-right: 3em;">
+              <div class="mr-4">
                 <div class="image-round testomonial-image">
                   <img src="./images/testomonial-container.png" />
                 </div>
               </div>
-              <div style="font-style: italic; margin-right: 3em;">
+              <div style="font-style: italic;">
                 <p style="font-size: 0.9em;">
-                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
                 </p>
                 <div class="d-flex align-items-center">
                   <div style="margin-right: 1em;">
@@ -707,10 +712,10 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div>          
         </div>
 
-        <div>
+        <div class="ml-4">
           <a href="#carousel-quotes" role="button" data-slide="next" style="color: #cccccc;">
             <i class="fas fa-chevron-right"></i>
           </a>
@@ -721,7 +726,7 @@
 
   <!-- What people say container -->
   <div class="what-people-say-container">
-    <div class="container" style="padding: 4em 0;">
+    <div class="container py-4 px-3 px-md-0">
       <div class="d-flex flex-column">
         <h3 class="mx-auto">Happy clients</h3>
         <h2 class="mx-auto text-uppercase">What people say</h2>
@@ -729,8 +734,8 @@
           <hr style="width: 3em; height: 0.05em; background: #f58b82; border-radius: .5em;" />
         </div>
       </div>
-      <div class="d-flex" style="margin-bottom: 3em;">
-        <div class="d-flex" style="margin-right: 3em;">
+      <div class="d-flex flex-column flex-md-row mb-md-4">
+        <div class="d-flex mr-md-4">
           <div class="image-round what-people-say-image">
             <img src="./images/what-people-say-image-1.png" style="max-width: 10em; height: 7em; margin-left: -2.7em;" />
           </div>
@@ -763,8 +768,8 @@
           </div>
         </div>
       </div>
-      <div class="d-flex">
-        <div class="d-flex" style="margin-right: 3em;">
+      <div class="d-flex flex-column flex-md-row">
+        <div class="d-flex mr-md-4">
           <div class="image-round what-people-say-image">
             <img src="./images/what-people-say-image-3.png" style="max-width: 9em; height: 6em; margin-left: -2.2em;" />
           </div>
@@ -802,16 +807,16 @@
 
   <!-- Blog container -->
   <div>
-    <div class="container" style="padding: 4em 0;">
-      <div class="container d-flex flex-column">
+    <div class="container d-flex flex-column py-4">
+      <div class="d-flex flex-column">
         <h3 class="mx-auto">Our stories</h3>
         <h2 class="mx-auto text-uppercase">Latest blog</h2>
         <div class="mx-auto py-3">
           <hr style="width: 3em; height: 0.05em; background: #f58b82; border-radius: .5em;" />
         </div>
       </div>
-      <div class="d-flex">
-        <div style="margin-right: 2em; width: 23em;">
+      <div class="latest-blog d-flex flex-column flex-md-row mx-auto mx-md-0">
+        <div class="mb-3 mb-md-0 mr-md-3">
           <div>
             <div style="position: relative;">
               <div style="height: 11em; overflow-y: hidden; display: flex; align-items: flex-end; margin-bottom: 1em;">
@@ -841,7 +846,7 @@
           </div>
         </div>
 
-        <div style="margin-right: 2em; width: 23em;">
+        <div class="mb-3 mb-md-0 mr-md-3">
           <div>
             <div style="position: relative;">
               <div style="height: 11em; overflow-y: hidden; display: flex; align-items: flex-end; margin-bottom: 1em;">
@@ -870,7 +875,7 @@
           </div>
         </div>
 
-        <div style="width: 23em;">
+        <div>
           <div>
             <div style="position: relative;">
               <div style="height: 11em; overflow-y: hidden; display: flex; align-items: flex-end; margin-bottom: 1em;">
@@ -916,8 +921,8 @@
   <!-- Footer -->
   <footer style="background: #f8f8f8;">
     <div class="container" style="padding: 3em 0;">
-      <div class="d-flex">
-        <div class="d-flex flex-column" style="margin-right: 2em; max-width: 25em;">
+      <div class="d-flex flex-column flex-md-row px-3 px-md-0">
+        <div class="d-flex flex-column mr-md-3" style="max-width: 25em;">
           <div style="color: #cccccc; font-size: 1.7em; font-weight: 700; margin-bottom: 1em;">MoGo</div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -967,7 +972,7 @@
 					</div>
         </div>
 
-        <div class="d-flex flex-column" style="margin-right: 2em;">
+        <div class="d-flex flex-column mr-md-3">
           <div class="text-uppercase" style="font-size: 0.8em; font-weight: 600; margin-bottom: 3em;">Blogs</div>
           <div class="d-flex" style="margin-bottom: 2em;">
             <div style="margin-right: 1em; width: 7em; min-width: 7em; max-width: 7em;">
