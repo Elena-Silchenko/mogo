@@ -15,9 +15,9 @@
 </head>
 <body>
   <!-- Main section -->
-  <div class="header pb-3">
+  <div class="header" style="background-color: #f0d68a; height: calc(100vh - 75px); min-height: 470px; max-height: 600px;">
     <!-- Header -->
-    <div class="container-sm">
+    <div class="container-md">
       <!-- Header section -->
       <nav class="navbar navbar-expand-sm navbar-dark">
         <!-- Header container -->
@@ -61,31 +61,34 @@
               <button class="btn btn-outline-light">LEARN MORE</button>
             </div>
           </div>
-          <div class="main-progress d-none d-md-flex mx-auto">
-            <div class="progress-block">
-              <div class="progress-bar d-flex" style="--progress: 30%"></div>
-              <div class="text-uppercase">01 Intro</div>
-            </div>
-            <div class="progress-block">
-              <div class="progress-bar d-flex" style="--progress: 0%"></div>
-              <div class="text-uppercase">02 Work</div>
-            </div>
-            <div class="progress-block">
-              <div class="progress-bar d-flex" style="--progress: 0%"></div>
-              <div class="text-uppercase">03 About</div>
-            </div>
-            <div class="progress-block">
-              <div class="progress-bar d-flex" style="--progress: 0%"></div>
-              <div class="text-uppercase">04 Contacts</div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <div class="d-none d-md-block py-4" style="background: #f0d68a; color: #fff; position: sticky; top: -1pt; margin-top: -1pt; z-index: 9999;">
+    <div class="main-progress container d-flex mx-auto">
+      <div class="progress-block">
+        <div class="progress-bar d-flex" style="--progress: 30%"></div>
+        <a href="#about-us" class="text-uppercase">01 Intro</a>
+      </div>
+      <div class="progress-block">
+        <div class="progress-bar d-flex" style="--progress: 0%"></div>
+        <a href="#facts" class="text-uppercase">02 Work</a>
+      </div>
+      <div class="progress-block">
+        <div class="progress-bar d-flex" style="--progress: 0%"></div>
+        <a href="#who-we-are" class="text-uppercase">03 About</a>
+      </div>
+      <div class="progress-block">
+        <div class="progress-bar d-flex" style="--progress: 0%"></div>
+        <a href="#what-people-say" class="text-uppercase">04 Contacts</a>
+      </div>
+    </div>
+  </div>
+
   <!-- About us container -->
-  <div>
+  <div id="about-us">
     <div class="container" style="padding: 4em 0">
       <div class="d-flex flex-column" style="margin-bottom: 5em;">
         <h3 class="mx-auto">What we do</h3>
@@ -457,7 +460,7 @@
   </div>
 
   <!-- Team container -->
-  <div>
+  <div id="who-we-are">
     <div class="container" style="padding: 4em 0">
       <div class="d-flex flex-column">
         <h3 class="mx-auto">Who we are</h3>
@@ -725,7 +728,7 @@
   </div>
 
   <!-- What people say container -->
-  <div class="what-people-say-container">
+  <div id="what-people-say" class="what-people-say-container">
     <div class="container py-4 px-3 px-md-0">
       <div class="d-flex flex-column">
         <h3 class="mx-auto">Happy clients</h3>
